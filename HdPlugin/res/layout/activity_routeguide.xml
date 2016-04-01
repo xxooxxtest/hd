@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/mapview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip">
+            <TextView android:textSize="18.0sp" android:id="@id/start_node" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="起点：百度大厦" />
+            <TextView android:textSize="18.0sp" android:id="@id/end_node" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="终点：北京天安门" />
+        </LinearLayout>
+        <Button android:textSize="24.0sp" android:layout_gravity="center" android:id="@id/button_navigation" android:layout_width="200.0dip" android:layout_height="80.0dip" android:text="一键导航" />
+    </FrameLayout>
+</FrameLayout>

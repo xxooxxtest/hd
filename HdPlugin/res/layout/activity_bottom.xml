@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/buttom_bar_group" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/button_home" style="@style/ButtomBar">
+            <ImageButton android:background="@drawable/btn_home_selector" android:layout_width="22.0dip" android:layout_height="22.0dip" android:contentDescription="@string/bottom_home" style="@style/ButtomBarImgBtn" />
+            <TextView android:textSize="9.0dip" android:textColor="@color/tv_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottom_home" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/button_classify" style="@style/ButtomBar">
+            <ImageButton android:background="@drawable/btn_classify_selector" android:layout_width="23.0dip" android:layout_height="22.0dip" android:contentDescription="@string/bottom_classify" style="@style/ButtomBarImgBtn" />
+            <TextView android:textSize="9.0dip" android:textColor="@color/tv_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottom_classify" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/button_cart" style="@style/ButtomBar">
+            <ImageButton android:id="@id/ib_cart" android:background="@null" android:src="@drawable/btn_cart_selector" android:contentDescription="@string/bottom_cart" style="@style/ButtomBarImgBtnBadge" />
+            <TextView android:textSize="9.0dip" android:textColor="@color/tv_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottom_cart" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/button_story" style="@style/ButtomBar">
+            <ImageButton android:background="@drawable/btn_story_selector" android:layout_width="22.0dip" android:layout_height="22.0dip" android:contentDescription="@string/bottom_story" style="@style/ButtomBarImgBtn" />
+            <TextView android:textSize="9.0dip" android:textColor="@color/tv_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottom_story" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/button_my" style="@style/ButtomBar">
+            <ImageButton android:background="@drawable/btn_my_selector" android:layout_width="22.0dip" android:layout_height="22.0dip" android:contentDescription="@string/bottom_my" style="@style/ButtomBarImgBtn" />
+            <TextView android:textSize="9.0dip" android:textColor="@color/tv_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottom_my" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffdadce6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignTop="@id/buttom_bar_group" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/base_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" />
+        <LinearLayout style="@style/base_et_parent_style">
+            <TextView android:textColor="@color/base_tv_color" android:text="设置密码:" style="@style/base_tv_style" />
+            <EditText android:id="@id/et_fragment_setpass_phone_pass" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:hint="请输入密码" android:inputType="textPassword" android:imeOptions="actionDone" style="@style/base_et_content_style" />
+            <ImageView android:id="@id/iv_phone_clear" style="@style/base_et_clear_style" />
+        </LinearLayout>
+        <View android:background="@color/base_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:enabled="false" android:textSize="13.0dip" android:textColor="@color/base_tv_sub_color" android:gravity="left" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="4.0dip" android:text="密码由6-20位英文字母、数字或符号组成" />
+        <TextView android:id="@id/tv_fragment_setpass_phone_submit" android:text="注册" style="@style/base_tv_submit_style" />
+    </LinearLayout>
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/dialog_layout" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list apk:oneshot="false"
+  xmlns:apk="http://schemas.android.com/apk/res/android">
+    <item apk:duration="500" apk:drawable="@drawable/microphone_1" />
+    <item apk:duration="500" apk:drawable="@drawable/microphone_2" />
+    <item apk:duration="500" apk:drawable="@drawable/microphone_3" />
+    <item apk:duration="500" apk:drawable="@drawable/microphone_4" />
+</animation-list>

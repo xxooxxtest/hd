@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main_frame" android:background="@color/base_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fragment_home_images" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/fragment_home_classes" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" layout="@layout/fragment_home_features" />
+    <RelativeLayout android:paddingLeft="8.0dip" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17.0dip" android:textColor="@color/base_tv_color" android:id="@id/tv_temp_hots" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="热卖鲜花" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/base_tv_sub_color" android:id="@id/tv_fragment_home_hot_more" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多" android:layout_alignBottom="@id/tv_temp_hots" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

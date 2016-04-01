@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/main_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View style="@style/base_divider_style" />
+        <include android:id="@id/ll_activity_main_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_main_bottom" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_ad" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_bg_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/welcome_bottom" android:scaleType="centerCrop" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/iv_bg_bottom">
+            <ImageView android:id="@id/iv_ad_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@android:color/white" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/iv_ad" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/tv_ad_skip" android:visibility="gone" android:layout_width="54.0dip" android:layout_height="22.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/btn_skip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

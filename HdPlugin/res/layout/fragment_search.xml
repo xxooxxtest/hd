@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/actionbar_bg_white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/iv_back" android:padding="10.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/return1" android:adjustViewBounds="true" />
+        <RelativeLayout android:background="@drawable/et_search_bg" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_weight="1.0">
+            <ImageView android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/magnifier1" android:layout_centerVertical="true" />
+            <EditText android:textSize="13.0dip" android:textColor="@color/base_tv_color" android:textColorHint="@color/base_tv_sub_color" android:id="@id/et_fragment_search_key" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="36.0dip" android:hint="请输入关键字" android:singleLine="true" android:layout_centerVertical="true" android:imeOptions="actionSearch" />
+            <ImageView android:id="@id/iv_fragment_search_by_voice" android:padding="6.0dip" android:layout_width="27.0dip" android:layout_height="28.0dip" android:src="@drawable/icon_search" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0dip" android:textColor="@color/base_tv_color" android:textColorHint="@color/base_tv_sub_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tv_fragment_search_submit" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="搜索" />
+    </LinearLayout>
+    <View style="@style/base_divider_style" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/base_user_item_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="16.0dip" android:text="热门搜索" />
+    <com.hua.widge.MyGridView android:id="@id/gv_fragment_search_hot" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:numColumns="3" />
+    <TextView android:textSize="15.0dip" android:textColor="@color/base_user_item_color" android:id="@id/tv_fragment_search_label_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="16.0dip" android:text="浏览记录" />
+    <HorizontalScrollView android:id="@id/sv_fragment_search_record" android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_fragment_search_record" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <TextView android:textSize="15.0dip" android:textColor="@color/base_user_item_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="16.0dip" android:text="搜索历史" />
+    <HorizontalScrollView android:id="@id/sv_fragment_search_histroy" android:scrollbars="@null" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_fragment_search_histroy" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <TextView android:textSize="13.0dip" android:textColor="@color/base_tv_color" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_fragment_search_clear" android:background="@drawable/btn_clear_histroy" android:padding="10.0dip" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="清除历史记录" />
+</LinearLayout>

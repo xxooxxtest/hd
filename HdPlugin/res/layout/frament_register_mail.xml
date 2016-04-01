@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/base_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout style="@style/base_et_parent_style">
+                <TextView android:text="邮箱: " style="@style/base_tv_style" />
+                <EditText android:id="@id/et_fragment_register_mail_mail" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:hint="请输入邮箱" style="@style/base_et_content_style" />
+                <ImageView android:id="@id/iv_mail_mail_clear" style="@style/base_et_clear_style" />
+            </LinearLayout>
+            <View android:background="@color/base_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="52.0dip" />
+            <LinearLayout style="@style/base_et_parent_style">
+                <TextView android:text="密码: " style="@style/base_tv_style" />
+                <EditText android:id="@id/et_fragment_register_mail_pass" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:hint="请输入密码" android:inputType="textPassword" style="@style/base_et_content_style" />
+                <ImageView android:id="@id/iv_mail_pass_clear" style="@style/base_et_clear_style" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/base_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <View android:background="@color/base_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" />
+        <LinearLayout style="@style/base_et_parent_style">
+            <EditText android:id="@id/et_fragment_register_mail_yzm" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:hint="请输入验证码" android:singleLine="true" android:inputType="number" android:imeOptions="actionDone" style="@style/base_et_content_style" />
+            <ImageView android:id="@id/iv_mail_yzm_clear" style="@style/base_et_clear_style" />
+            <ImageView android:id="@id/iv_yzm" android:layout_width="75.0dip" android:layout_height="30.0dip" android:layout_marginRight="8.0dip" android:scaleType="centerCrop" />
+            <View android:background="@color/base_divider" android:layout_width="1.0dip" android:layout_height="48.0dip" />
+            <TextView android:textColor="#ff75add9" android:gravity="center" android:id="@id/tv_fragment_register_mail_yzm" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="换一张" />
+        </LinearLayout>
+        <View android:background="@color/base_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/base_orange" android:id="@id/tv_fragment_register_mail_alert" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:text="格式错误,请输入正确的邮箱号" />
+        <TextView android:id="@id/tv_fragment_register_mail_next" android:text="注册" style="@style/base_tv_submit_style" />
+    </LinearLayout>
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/dialog_layout" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ll_fragment_home_features" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_fragment_home_feature_0" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_fragment_home_feature_1" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_marginRight="1.0dip" android:scaleType="centerCrop" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_fragment_home_feature_2" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_weight="1.0" />
+</LinearLayout>

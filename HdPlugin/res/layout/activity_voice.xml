@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootview" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="250.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_activity_voice_close" android:padding="12.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/close" android:adjustViewBounds="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="20.0dip" android:textColor="#ff000000" android:id="@id/tv_activity_voice_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="36.0dip" android:text="@string/activity_voice_speek" />
+    <RelativeLayout android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_marginBottom="25.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/iv_activity_try_again" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/iv_speech_selector" android:layout_centerInParent="true" />
+        <ImageView android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/speech_circle1" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_activity_try_anim" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/speech_circle2" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

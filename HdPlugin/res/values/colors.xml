@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_item_press">#ffbbbbbb</color>
+    <color name="action_bar_bg">#ffe02b2b</color>
+    <color name="actionbar_bg_white">#fff9f9f9</color>
+    <color name="action_bar_item_pressed">#33000000</color>
+    <color name="tv_default">#ff6d6d6d</color>
+    <color name="tv_press">#ffe20415</color>
+    <color name="tv_record_default">#ffffffff</color>
+    <color name="tv_record_disable">#ffaaaeb3</color>
+    <color name="tv_fragment_home_class">#ff555555</color>
+    <color name="base_bg">#fff3f3f6</color>
+    <color name="base_tv_color">#ff555555</color>
+    <color name="base_tv_sub_color">#ffadadad</color>
+    <color name="tv_price_color">#ffff0000</color>
+    <color name="base_bg_white">#ffffffff</color>
+    <color name="base_tv_title_color">#ff666666</color>
+    <color name="base_divider">#ffcccccc</color>
+    <color name="base_orange">#ffff6427</color>
+    <color name="base_orange_selsected">#ffe94e11</color>
+    <color name="base_user_item_color">#ff777777</color>
+    <color name="nav_bottom_tab_default">#ff777777</color>
+    <color name="nav_bottom_tab_selected">#ffff6427</color>
+    <color name="base_item_press">#ffbbbbbb</color>
+    <color name="listview_item_press">#fff9f9f9</color>
+    <color name="black_translucent">#50000000</color>
+    <color name="trans">#00000000</color>
+    <color name="black">#ff000000</color>
+    <color name="alertdialog_line">#ffc6c6c6</color>
+    <color name="actionsheet_blue">#ff037bff</color>
+    <color name="actionsheet_red">#fffd4a2e</color>
+    <color name="actionsheet_gray">#ff8f8f8f</color>
+</resources>

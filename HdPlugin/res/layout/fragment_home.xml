@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:background="@drawable/navbar_background" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/icon" android:layout_width="96.0dip" android:layout_height="23.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/nav_logo" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_fragment_home_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/home_search" android:scaleType="centerInside" android:layout_weight="1.0" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+        <View android:id="@id/v_speech" android:layout_width="36.0dip" android:layout_height="44.0dip" android:layout_alignRight="@id/iv_fragment_home_search" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView android:id="@id/pull_refresh_list" android:background="@color/base_bg" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="@color/base_bg" android:divider="@null" android:dividerHeight="0.0dip" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" />
+        <ImageView android:id="@id/iv_fragment_home_back_top" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="50.0dip" android:src="@drawable/fanhui" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:alpha="0.6" />
+        <com.handmark.pulltorefresh.library.PullToRefreshListViewInvisible android:id="@id/pull_refresh_list_recommand" android:background="@color/base_bg" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" />
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/dialog_layout" />
+    </RelativeLayout>
+</LinearLayout>

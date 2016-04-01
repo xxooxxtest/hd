@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/base_divider" android:layout_width="1.0dip" android:layout_height="@dimen/item_category_height" android:layout_alignParentRight="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/base_tv_color" android:gravity="center" android:id="@id/tv_item_fragment_classes_category" android:layout_width="fill_parent" android:layout_height="@dimen/item_category_height" />
+    <View android:background="@color/base_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignBottom="@id/tv_item_fragment_classes_category" />
+</RelativeLayout>

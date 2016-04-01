@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/base_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" />
+        <LinearLayout style="@style/base_et_parent_style">
+            <TextView android:text="手机号: " style="@style/base_tv_style" />
+            <com.hua.widge.PhoneEditText android:id="@id/et_fragment_register_phone_num" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:hint="请输入手机号" style="@style/base_et_content_style" />
+            <ImageView android:id="@id/iv_phone_clear" style="@style/base_et_clear_style" />
+        </LinearLayout>
+        <View android:background="@color/base_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <View android:background="@color/base_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" />
+        <LinearLayout style="@style/base_et_parent_style">
+            <TextView android:text="验证码: " style="@style/base_tv_style" />
+            <EditText android:id="@id/et_fragment_register_phone_yzm" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:hint="请输入验证码" android:singleLine="true" android:inputType="number" android:imeOptions="actionDone" style="@style/base_et_content_style" />
+            <ImageView android:id="@id/iv_mail_clear" style="@style/base_et_clear_style" />
+            <View android:background="@color/base_divider" android:layout_width="1.0dip" android:layout_height="48.0dip" />
+            <TextView android:textColor="@color/tv_yzm_selector" android:gravity="center" android:id="@id/tv_fragment_register_phone_yzm" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="48.0dip" android:text="获取验证码" />
+        </LinearLayout>
+        <View android:background="@color/base_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:id="@id/tv_fragment_register_phone_next" android:text="下一步" style="@style/base_tv_submit_style" />
+    </LinearLayout>
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/dialog_layout" />
+</RelativeLayout>

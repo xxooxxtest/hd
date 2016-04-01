@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/vp_fragment_home_images" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.hua.widge.PositionBar android:layout_gravity="center_vertical" android:id="@id/positionBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignBottom="@id/vp_fragment_home_images" android:layout_centerHorizontal="true" />
+</RelativeLayout>

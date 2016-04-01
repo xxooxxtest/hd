@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/actionbar_bg_white" android:layout_width="fill_parent" android:layout_height="@dimen/actionbar_height">
+        <ImageView android:id="@id/iv_back" android:padding="12.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/return1" android:adjustViewBounds="true" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/base_user_item_color" android:id="@id/tv_fragment_user_title" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微博分享" android:layout_centerInParent="true" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/base_user_item_color" android:id="@id/tv_fragment_user_submit" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提交" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View style="@style/base_divider_style" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/et_activity_share_weibo" android:background="@android:color/transparent" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minLines="1" />
+    </LinearLayout>
+</LinearLayout>

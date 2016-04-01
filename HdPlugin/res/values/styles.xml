@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="NotificationTitle" parent="@android:style/TextAppearance.StatusBar.EventContent.Title" />
+    <style name="TransParentActivity" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="AppDialogTheme" parent="@android:style/Theme.Dialog" />
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@anim/dialog_exit</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+    <style name="activitydialogAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_bottom_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_top_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_top_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_bottom_out</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="ButtomBar">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="ButtomBarImgBtn">
+        <item name="android:clickable">false</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="ButtomBarImgBtnBadge">
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">34.0dip</item>
+        <item name="android:layout_height">22.0dip</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="base_tv_style">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">@color/base_tv_color</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="base_divider_style">
+        <item name="android:background">@color/base_divider</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.70000005dip</item>
+    </style>
+    <style name="base_et_parent_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/base_bg_white</item>
+        <item name="android:paddingLeft">@dimen/base_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">36.0dip</item>
+    </style>
+    <style name="base_et_clikable_style" parent="@style/base_et_parent_style">
+        <item name="android:background">@drawable/base_item_selector</item>
+    </style>
+    <style name="base_et_clear_style">
+        <item name="android:padding">12.0dip</item>
+        <item name="android:layout_width">48.0dip</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:src">@drawable/close</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+    <style name="base_tv_submit_style">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/base_bg_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_orange_selector</item>
+        <item name="android:padding">@dimen/base_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">16.0dip</item>
+    </style>
+    <style name="base_tv_submit_white_style">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/base_bg_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_white_selector</item>
+        <item name="android:padding">@dimen/base_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">16.0dip</item>
+    </style>
+    <style name="base_et_tip_style">
+        <item name="android:textSize">@dimen/base_et_tip_size</item>
+        <item name="android:textColor">@color/base_tv_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="base_et_content_style">
+        <item name="android:textSize">@dimen/base_et_content_size</item>
+        <item name="android:textColor">@color/base_tv_color</item>
+        <item name="android:textColorHint">@color/base_tv_sub_color</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+    <style name="base_indicator_style">
+        <item name="android:layout_width">11.0dip</item>
+        <item name="android:layout_height">20.0dip</item>
+        <item name="android:src">@drawable/icon_more_small</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="activityStyle" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="tencentStyle" parent="@android:style/Theme.Translucent">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+</resources>

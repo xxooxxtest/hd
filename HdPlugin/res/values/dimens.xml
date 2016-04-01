@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="actionbar_height">48.0dip</dimen>
+    <dimen name="actionbar_item_width_height">47.0dip</dimen>
+    <dimen name="item_category_height">56.0dip</dimen>
+    <dimen name="base_textsize_16">16.0dip</dimen>
+    <dimen name="base_et_tip_size">18.0dip</dimen>
+    <dimen name="base_et_content_size">16.0dip</dimen>
+    <dimen name="base_padding">12.0dip</dimen>
+    <dimen name="indicator_right_padding">10.0dip</dimen>
+    <dimen name="indicator_corner_radius">12.0dip</dimen>
+    <dimen name="indicator_internal_padding">4.0dip</dimen>
+    <dimen name="header_footer_left_right_padding">24.0dip</dimen>
+    <dimen name="header_footer_top_bottom_padding">12.0dip</dimen>
+</resources>

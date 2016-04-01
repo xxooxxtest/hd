@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.hua.widge.CustomWebView android:id="@id/weview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_error" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.hua.widge.CustomWebView android:id="@id/weview_no_network" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/bar" android:layout_width="fill_parent" android:layout_height="2.0dip" style="@android:style/Widget.ProgressBar.Horizontal" />
+        <RelativeLayout android:id="@id/view_blank" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <include android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="44.0dip" layout="@layout/activity_bottom" />
+</LinearLayout>
